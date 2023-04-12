@@ -859,6 +859,9 @@ input {
     transition: opacity 0.4s, transform 0.3s;
     transition: opacity 0.4s, transform 0.3s, -webkit-transform 0.3s;
   }
+  .cardsWrapper-gorizontal .cardsArray:hover::after {
+    opacity: 0.4;
+  }
   .cardsWrapper-gorizontal .cardsArray::after {
     content: "";
     position: absolute;
@@ -872,6 +875,9 @@ input {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    -webkit-transition: opacity 0.35s;
+    -o-transition: opacity 0.35s;
+    transition: opacity 0.35s;
   }
   .cardsWrapper-gorizontal .cardsArray-arrayLeft {
     -webkit-transform: translateX(-1px);
