@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="description" content="" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+	<link href="css/main.min.css" rel="stylesheet" />
+
+	<title></title>
+</head>
+<body>
+	<div class="body-inner">		
+		<header class="headerMain container-fluid">
+	<div class="container-fluid-inner">
+		<div class="wrapperDefault">
+				<div class=headerMain-inner">
+						<a href="" class="headerMain-logo" title="Moonhub">
+							<picture class="card-img-picture">
+								<source media="(min-width:991px)" srcset="img/logo_head.webp">
+								<source media="(min-width:320px)" srcset="img/logo_head_mob.webp">
+								<img src="img/logo_head.webp" alt="Moonhub" />
+							</picture>
+						</a>
+							<div class="menuMobile-wrapper">
+								<div class="burger">
+									<svg class="icon icon-menu icon-burger">
+										<use xlink:href="img/sprite.svg#burger"></use>
+									</svg>
+								</div>
+								<div class="row menuMobile-wrapper-row">
+									<div class="col headerMain-search-col">
+										<div class="headerMain-search">
+												<div class="headerMain-search-inputWrapper form-item">
+													<input class="headerMain-search-input form-item-input" type="text" placeholder=" ">
+													<div class="placeholder">
+														Search
+													</div>
+													<img class="icoSearch" src="img/search.svg" alt="" />
+												</div>
+										</div>										
+									</div>
+									<div class="col col-12 headerMain-menu headerMain-menu-col d-none">
+										<ul class="headerMain-menu-list">
+											<li><a href="">Database</a></li>
+											<li><a href="">Weekly</a></li>
+											<li><a href="">Story</a></li>
+											<li><a href="">Analytics</a></li>
+											<li><a href="">About</a></li>
+										</ul>
+									</div>
+									<div class="col col-12 col-lg-auto headerMain-socials-col socialsContainer">
+										<a href="">
+											<svg class="icon icon-social icon-twiter">
+												<use xlink:href="img/sprite_socials.svg#twiter"></use>
+											</svg>
+										</a>
+										<a href="">
+											<svg class="icon icon-social icon-telegram">
+												<use xlink:href="img/sprite_socials.svg#telegram"></use>
+											</svg>
+										</a>
+										<a href="">
+											<svg class="icon icon-social icon-discord">
+												<use xlink:href="img/sprite_socials.svg#discord"></use>
+											</svg>
+										</a>
+									</div>
+									<div class="col col-12 col-lg-auto headerMain-log">
+										<a href="" class="userLogined">
+											<img src="img/temp_user.webp" alt="" />
+										</a>
+										<!-- <button class="btn btn-yellow btn-sm btn-login">
+											<span class="btn-txt">
+												Login/Sign Up
+											</span>
+										</button> -->
+									</div>
+								</div>
+							</div>
+				</div>
+		</div>
+	</div>
+</header>
+<nav class="menuAside">
+	<a href="">
+		<svg class="icon icon-menu icon-database">
+			<use xlink:href="img/sprite.svg#database"></use>
+		</svg>
+		<span class="lnk-txt">Database</span>
+	</a>
+	<a href="">
+		<svg class="icon icon-menu icon-calendar">
+			<use xlink:href="img/sprite.svg#calendar"></use>
+		</svg>
+		<span class="lnk-txt">Weekly</span>
+	</a>
+	<a href="">
+		<svg class="icon icon-menu icon-story">
+			<use xlink:href="img/sprite.svg#story"></use>
+		</svg>
+		<span class="lnk-txt">Story</span>
+	</a>
+	<a href="">
+		<svg class="icon icon-menu icon-analytics">
+			<use xlink:href="img/sprite.svg#analytics"></use>
+		</svg>
+		<span class="lnk-txt">Analytics</span>
+	</a>
+	<a href="">
+		<svg class="icon icon-menu icon-about">
+			<use xlink:href="img/sprite.svg#about"></use>
+		</svg>
+		<span class="lnk-txt">About</span>
+	</a>
+</nav>
+
+		<section class="container-fluid  section-profileInfo">
+			<div class="container-fluid-inner">
+				<div class="wrapperDefault">
+					<div class="row gutters-10">
+						<div class="col-12 col-xl-9">
+							<div class="grayContainer">
+								<div class="row">
+									<div class="col-12 col-md-4 col-lg-3">
+											<div class="row">
+												<div class="col-5 col-md-12">
+													<div class="profileInfo-avatar">
+														<img src="img/temp_user.webp" width="100%" />
+													</div>
+													<a href="" class="profileInfo-edit">
+														<svg class="icon icon-edit">
+															<use xlink:href="img/sprite.svg#edit"></use>
+														</svg>
+														Edit
+													</a>
+													<a href="" class="profileInfo-logout">
+														<svg class="icon icon-logout">
+															<use xlink:href="img/sprite.svg#logout"></use>
+														</svg>
+														Logout
+													</a>
+												</div>
+												
+											</div>
+									</div>
+									<div class="col-12 col-md-8 col-lg-9">
+										<div class="profileInfo-userData">
+											<div class="profileInfo-userData-header">
+												<div class="fullName">
+													Kevin Malone
+													<a href="" class="editUserData"></a>
+												</div>
+												<div class="registered">
+													Registered since 12.03.2022
+												</div>												
+											</div>
+											<ul class="profileInfo-userData-list">											
+	
+												<li>
+													<div class="dt">Nickname</div>
+													<div class="dd">
+														<div class="row">
+															<div class="col-12 col-lg-6">
+																<div class="form-item mt-0">
+																	<input class="form-item-input form-item-input-sm" value="kev1n" type="input" />															
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>	
+	
+												<li>
+													<div class="dt">Country</div>
+													<div class="dd">
+														<div class="row">
+															<div class="col-12 col-lg-6">
+																<div class="form-item mt-0">
+																	<select class="form-item-input">
+																		<option value="">Sweden</option>
+																		<option value="">France</option>
+																	</select>
+																	<!-- <input class="form-item-input form-item-input-sm" value="Sweden" type="input" />															 -->
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+	
+												<li>
+													<div class="dt">Email</div>
+													<div class="dd">
+														<div class="row">
+															<div class="col-12 col-lg-6">
+																<div class="form-item mt-0">
+																	<input class="form-item-input form-item-input-sm" value="kevin1990@gmail.com" type="input" />															
+																</div>
+															</div>
+														</div>
+													</div>													
+												</li>
+												<li>
+													<div class="dt">BIO
+														<span class="q" data-tooltip="true">
+															<span class="tooltip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod				
+															</span>
+													</div>
+													<div class="dd">
+														<div class="form-item mt-0">
+															<textarea class="form-item-input" placeholder=" "></textarea>
+															<div class="placeholder">
+																Tell us about yourself
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="dt">
+														Digest
+													</div>
+													<div class="dd">
+														<div class="row">
+															<div class="col col-md">
+																<span >No spam, only the most important news of the week</span>
+															</div>
+															<div class="col col-auto">
+																<div class="switcher-wrapper d-inline-block">		
+																	<label class="switcher">
+																		<input type="checkbox" >
+																		<span class="slider round"></span>
+																	</label>
+																	<div class="switcher-title">																		
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="dt">
+														Notification
+													</div>
+													<div class="dd">
+														<div class="row">
+															<div class="col col-md">
+																<span>Replies, likes and other interactions on the site</span>
+															</div>
+															<div class="col col-auto">
+																<div class="switcher-wrapper d-inline-block">		
+																	<label class="switcher">
+																		<input type="checkbox" checked>
+																		<span class="slider round"></span>
+																	</label>
+																	<div class="switcher-title">																
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="dt">
+														Account settings
+													</div>
+													<div class="dd">
+														<a href="" class="attention"><b>Delete my account</b></a>
+													</div>
+												</li>
+											</ul>
+										</div>									
+									</div>
+								</div>	
+													
+							</div>
+						</div>
+						<div class="col-12 col-xl-3">
+							<div class="grayContainer profileInfo-userActivities">
+								<div class="row">
+									<div class="col-12 col-md-5 col-xl-12">
+										<div class="profileInfo-userActivities-row favourite">
+											<a href="">
+												<svg class="icon icon-favor">
+													<use xlink:href="img/sprite.svg#favor"></use>
+												</svg>
+												Favourite <span class="kolvo">(32)</span>
+											</a>
+										</div>
+										<div class="profileInfo-userActivities-row comments">
+											<a href="">										
+												<svg class="icon icon-comments">
+													<use xlink:href="img/sprite.svg#comments"></use>
+												</svg>
+												Comments <span class="kolvo">(12)</span>
+											</a>
+										</div> 
+										<div class="profileInfo-userActivities-row likes">
+											<a href="">
+												<svg class="icon icon-like">
+													<use xlink:href="img/sprite.svg#like"></use>
+												</svg>
+												Likes <span class="kolvo">(67)</span>
+											</a>
+										</div> 
+									</div>
+									<div class="col-12 col-md-5 col-xl-12">
+										<div class="profileInfo-userActivities-row react">
+											<a href="">
+												<svg class="icon icon-react">
+													<use xlink:href="img/sprite.svg#react"></use>
+												</svg>
+												React on comments <span class="kolvo">(8 <b>+4</b>)</span>
+											</a>
+										</div> 
+										<div class="profileInfo-userActivities-row replies">
+											<a href="">
+												<svg class="icon icon-replies">
+													<use xlink:href="img/sprite.svg#replies"></use>
+												</svg>
+												Replies on comments <span class="kolvo">(24)</span>
+											</a>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<footer class="footerMain">
+	<div class="container-fluid">				
+		<div class="container-fluid-inner">
+			<div class="wrapperDefault">
+				<div class="row">
+					<div class="col-12 col-md-auto footerMain-logo-col">
+						<a href="" class="footerMain-logo" title="">
+							<img src="img/logo_footer.svg" alt="Moonhub" />
+						</a>
+						<div class="socialsContainer">
+							<a href="">
+								<svg class="icon icon-social icon-twiter">
+									<use xlink:href="img/sprite_socials.svg#twiter"></use>
+								</svg>
+							</a>
+							<a href="">
+								<svg class="icon icon-social icon-telegram">
+									<use xlink:href="img/sprite_socials.svg#telegram"></use>
+								</svg>
+							</a>
+							<a href="">
+								<svg class="icon icon-social icon-discord">
+									<use xlink:href="img/sprite_socials.svg#discord"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="col-12 col-md">
+
+						<div class="footerMain-menu">
+							<ul class="footerMain-menu-list">
+								<li><a href="">Database</a></li>
+								<li><a href="">Weekly</a></li>
+								<li><a href="">Story</a></li>
+								<li><a href="">Analytics</a></li>
+								<li><a href="">About</a></li>
+							</ul>
+							<ul class="footerMain-menu-list">
+								<li><a href="">Transparency</a></li>
+								<li><a href="">Subscription Terms</a></li>
+								<li><a href="">Terms & Conditions</a></li>
+								<li><a href="">Copyright Notice</a></li>
+								
+
+							</ul>
+						</div>
+						<div class="footerMain-copyr">
+							© 2023 Moonhub. All Rights Reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/simplebar@6.0.0/dist/simplebar.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/simplebar@6.0.0/dist/simplebar.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+	</div>
+
+</body>
+</html>
