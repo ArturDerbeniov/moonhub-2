@@ -995,6 +995,12 @@ input {
       -ms-flex: 0 0 360px;
           flex: 0 0 360px;
 }
+.card.hidden {
+  display: none;
+}
+.card.hidden + .card {
+  margin-left: 0 !important;
+}
 .card-inner {
   position: relative;
   overflow: hidden;
@@ -1019,7 +1025,7 @@ input {
           justify-content: center;
   margin: 0 0 8px;
   padding: 0;
-  height: 190px;
+  height: 200px;
 }
 .card-header:hover .card-title {
   color: #FFCC16;
@@ -1895,8 +1901,9 @@ select option {
   margin-right: 20px;
   margin-bottom: 0;
 }
-.article-tags {
-  color: #FFEB39;
+.article-tags-item {
+  color: #FFEB39 !important;
+  margin-right: 15px;
 }
 .articleComments-comment {
   padding: 20px 0;
@@ -2418,6 +2425,9 @@ select option {
   .footerMain-menu-list li {
     margin-right: 40px;
   }
+}
+.footerMain-menu-list a:hover {
+  text-decoration: underline;
 }
 .footerMain-logo {
   display: block;
