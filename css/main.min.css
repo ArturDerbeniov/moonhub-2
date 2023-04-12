@@ -874,7 +874,10 @@ input {
     background-position: center;
   }
   .cardsWrapper-gorizontal .cardsArray-arrayLeft {
-    left: 0;
+    -webkit-transform: translateX(-1px);
+        -ms-transform: translateX(-1px);
+            transform: translateX(-1px);
+    left: -1px;
     background: -webkit-gradient(linear, right top, left top, from(rgba(25, 25, 27, 0)), color-stop(99%, rgb(24, 24, 26)));
     background: -o-linear-gradient(right, rgba(25, 25, 27, 0) 0%, rgb(24, 24, 26) 99%);
     background: linear-gradient(270deg, rgba(25, 25, 27, 0) 0%, rgb(24, 24, 26) 99%);
@@ -889,7 +892,10 @@ input {
             transform: translateX(-100%);
   }
   .cardsWrapper-gorizontal .cardsArray-arrayRight {
-    right: 0;
+    -webkit-transform: translateX(1px);
+        -ms-transform: translateX(1px);
+            transform: translateX(1px);
+    right: -1px;
     background: -webkit-gradient(linear, right top, left top, color-stop(0.51%, #18181A), color-stop(99%, rgba(25, 25, 27, 0)));
     background: -o-linear-gradient(right, #18181A 0.51%, rgba(25, 25, 27, 0) 99%);
     background: linear-gradient(270deg, #18181A 0.51%, rgba(25, 25, 27, 0) 99%);
@@ -1324,8 +1330,10 @@ input {
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 10%;
-            flex: 1 0 10%;
+        -ms-flex: 1 0 12%;
+            flex: 1 0 12%;
+    margin-right: 15px;
+    margin-left: 0;
   }
 }
 .tagsContainer ul {
@@ -1347,6 +1355,13 @@ input {
   font-family: "Moonhub-Regular";
   font-size: 20px;
   gap: 0 15px;
+  margin-left: 36px;
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+  .tagsContainer .listSections {
+    margin-left: 0;
+  }
 }
 .tagsContainer .listSections-item {
   opacity: 0.4;
