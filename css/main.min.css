@@ -1368,6 +1368,7 @@ input {
 }
 .tagsContainer .listSections-item.active {
   opacity: 1;
+  pointer-events: none;
 }
 .tagsContainer .listSections-item:hover a {
   text-decoration: underline;
